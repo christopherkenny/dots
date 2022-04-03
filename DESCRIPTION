@@ -18,3 +18,5 @@ Imports:
     ggplot2,
     magrittr,
     sf
+URL: https://github.com/christopherkenny/dots
+BugReports: https://github.com/christopherkenny/dots/issues
