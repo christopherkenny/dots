@@ -16,8 +16,7 @@ You can install the development version of dots from
 [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("christopherkenny/dots")
+remotes::install_github('christopherkenny/dots')
 ```
 
 ## Example
@@ -28,8 +27,20 @@ The main function in `dots` is `dots()`.
 library(dots)
 library(sf)
 #> Linking to GEOS 3.9.1, GDAL 3.4.3, PROJ 7.2.1; sf_use_s2() is TRUE
-data("suffolk")
+library(ggplot2)
+data('suffolk')
 dots::dots(suffolk, c(pop_black, pop_white)) + 
-  ggplot2::scale_color_viridis_d() + 
-  ggplot2::theme_void()
+  scale_color_viridis_d() + 
+  theme_void()
+```
+
+You can also use `dots_points()` to only make the randomized points.
+
+``` r
+dots::dots_points(suffolk, c(pop_black, pop_white)) %>% 
+  ggplot() + 
+  geom_sf(data = suffolk) + 
+  geom_sf(aes(color = dots_type)) + 
+  scale_color_viridis_d() + 
+  theme_void()
 ```
