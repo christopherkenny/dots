@@ -90,7 +90,7 @@ Only used if <code>filter_islands = TRUE</code>.</p></dd>
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">suffolk</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">boston_water</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="fu">clip_water</span><span class="op">(</span><span class="va">suffolk</span>, <span class="va">boston_water</span><span class="op">[</span><span class="fl">1</span>, <span class="op">]</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">clip_water</span><span class="op">(</span><span class="va">suffolk</span>, <span class="va">boston_water</span><span class="op">[</span><span class="fl">10</span>, <span class="op">]</span><span class="op">)</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Registered S3 method overwritten by 'geojsonlint':</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span>   method         from </span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span>   print.location dplyr</span>
@@ -134,17 +134,17 @@ Only used if <code>filter_islands = TRUE</code>.</p></dd>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 8       80 1827      1252       188      106        4       206        0</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 9       73 2340      1793       111      201        4       157        0</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 10      21 1532       117        63     1306        0        16        1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    vap_other vap_two        name     area                       geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1         17      48 Broad Sound 23098122 MULTIPOLYGON (((-7908235 52...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2         29     108 Broad Sound 23098122 MULTIPOLYGON (((-7910238 52...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3          6      57 Broad Sound 23098122 MULTIPOLYGON (((-7912112 52...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4          3      19 Broad Sound 23098122 MULTIPOLYGON (((-7906938 52...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5         20      72 Broad Sound 23098122 MULTIPOLYGON (((-7919230 52...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6         26      53 Broad Sound 23098122 MULTIPOLYGON (((-7915414 52...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7          4      37 Broad Sound 23098122 MULTIPOLYGON (((-7921513 52...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8         13      58 Broad Sound 23098122 MULTIPOLYGON (((-7909414 52...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9         17      57 Broad Sound 23098122 MULTIPOLYGON (((-7912518 52...</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10        12      17 Broad Sound 23098122 MULTIPOLYGON (((-7907995 52...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    vap_other vap_two             name   area                       geometry</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1         17      48 Little Mystic Ch 575502 MULTIPOLYGON (((-7908235 52...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2         29     108 Little Mystic Ch 575502 MULTIPOLYGON (((-7910238 52...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3          6      57 Little Mystic Ch 575502 MULTIPOLYGON (((-7912112 52...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4          3      19 Little Mystic Ch 575502 MULTIPOLYGON (((-7906938 52...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5         20      72 Little Mystic Ch 575502 MULTIPOLYGON (((-7919230 52...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6         26      53 Little Mystic Ch 575502 MULTIPOLYGON (((-7915414 52...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7          4      37 Little Mystic Ch 575502 MULTIPOLYGON (((-7921513 52...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8         13      58 Little Mystic Ch 575502 MULTIPOLYGON (((-7909414 52...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 9         17      57 Little Mystic Ch 575502 MULTIPOLYGON (((-7912518 52...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 10        12      17 Little Mystic Ch 575502 MULTIPOLYGON (((-7907995 52...</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
