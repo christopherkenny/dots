@@ -1,0 +1,21 @@
+url: http://christophertkenny.com/dots/
+template:
+  bootstrap: 5
+  bootswatch: journal
+reference:
+- title: "Make Dot Density Maps"
+  desc: "Major functions to create ggplots or sf points"
+  contents:
+  - starts_with("dots")
+- title: "Dot Engines"
+  desc: "Backends to generate spatial points"
+  contents:
+  - starts_with("engine")
+- title: "Other functions and data"
+  desc: "Other useful tools and bits of example data"
+  contents:
+  - suffolk
+  - boston_water
+  - clip_water
+  - filter_pts
+  - pipe

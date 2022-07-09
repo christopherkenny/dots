@@ -1,22 +1,40 @@
 Package: dots
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Dot Density Maps
+Version: 0.0.1
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Christopher T.",
+           family = "Kenny",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+           email = "christopherkenny@fas.harvard.edu",
+           comment = c(ORCID = "0000-0002-9386-6860"))
+Description: Generate point data for representing people within spatial data. This
+  collects a suite of tools for creating simple dot density maps. Several backends 
+  from different spatial packages are standardized to take the same arguments so
+  that they can be easily substituted for each other.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.0
 Imports: 
     ggplot2,
     magrittr,
-    sf
-URL: https://github.com/christopherkenny/dots
+    rlang,
+    rmapshaper,
+    sf,
+    terra,
+    purrr,
+    dplyr,
+    sp
+URL: https://github.com/christopherkenny/dots,
+    http://christophertkenny.com/dots/
 BugReports: https://github.com/christopherkenny/dots/issues
+Depends: 
+    R (>= 4.1)
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0),
+    wacolors
+VignetteBuilder: knitr
+Config/testthat/edition: 3
