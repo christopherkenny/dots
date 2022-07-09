@@ -11,7 +11,7 @@
 #'
 #' @examples
 #' data('suffolk')
-#' dots(suffolk, c(pop_white, pop_black), divisor = 1000)
+#' dots(suffolk, c(pop_white, pop_black), divisor = 2000)
 dots <- function(shp, cols, engine = engine_terra, divisor = 250,
                  min_point = 0.1 * divisor) {
   cols <- rlang::enquo(cols)

@@ -31,5 +31,5 @@ Make dot density plots
 }
 \examples{
 data('suffolk')
-dots(suffolk, c(pop_white, pop_black), divisor = 1000)
+dots(suffolk, c(pop_white, pop_black), divisor = 2000)
 }

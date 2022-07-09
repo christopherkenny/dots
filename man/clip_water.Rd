@@ -25,5 +25,5 @@ Remove Water
 \examples{
 data(suffolk)
 data(boston_water)
-clip_water(suffolk, boston_water[1, ])
+clip_water(suffolk, boston_water[10, ])
 }

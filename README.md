@@ -29,7 +29,7 @@ library(sf)
 #> Linking to GEOS 3.9.1, GDAL 3.4.3, PROJ 7.2.1; sf_use_s2() is TRUE
 library(ggplot2)
 data('suffolk')
-dots::dots(suffolk, c(pop_black, pop_white)) + 
+dots::dots(suffolk, c(pop_black, pop_white), divisor = 1000) + 
   scale_color_viridis_d() + 
   theme_void()
 ```
@@ -37,7 +37,7 @@ dots::dots(suffolk, c(pop_black, pop_white)) +
 You can also use `dots_points()` to only make the randomized points.
 
 ``` r
-dots::dots_points(suffolk, c(pop_black, pop_white)) %>% 
+dots::dots_points(suffolk, c(pop_black, pop_white), divisor = 1000) |> 
   ggplot() + 
   geom_sf(data = suffolk) + 
   geom_sf(aes(color = dots_type)) + 
