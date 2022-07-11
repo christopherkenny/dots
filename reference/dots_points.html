@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">dots</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.2</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -98,24 +98,25 @@
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="st">'suffolk'</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="fu">dots_points</span><span class="op">(</span><span class="va">suffolk</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">pop_white</span>, <span class="va">pop_black</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 2239 features and 3 fields</span>
+<span class="r-in"><span><span class="co"># subset to first 20 rows for speed on CRAN</span></span></span>
+<span class="r-in"><span><span class="fu">dots_points</span><span class="op">(</span><span class="va">suffolk</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">20</span>, <span class="op">]</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">vap_black</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Simple feature collection with 35 features and 2 fields</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Geometry type: POINT</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dimension:     XY</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -7924391 ymin: 5195536 xmax: -7899680 ymax: 5228317</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Bounding box:  xmin: -7921548 ymin: 5200070 xmax: -7903533 ymax: 5222635</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Projected CRS: WGS 84 / Pseudo-Mercator</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> First 10 features:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    pop_white pop_black dots_type                 geometry</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1          2         1 pop_white POINT (-7907511 5220831)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2          2         1 pop_white POINT (-7907474 5221015)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3          4         2 pop_white POINT (-7909842 5205084)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4          4         2 pop_white POINT (-7909429 5205220)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5          4         2 pop_white POINT (-7910166 5205316)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6          4         2 pop_white POINT (-7910058 5205170)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7          6         0 pop_white POINT (-7912054 5215097)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8          6         0 pop_white POINT (-7911760 5215113)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9          6         0 pop_white POINT (-7912105 5215060)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10         6         0 pop_white POINT (-7911964 5215074)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    vap_black dots_type                 geometry</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1          1 vap_black POINT (-7907900 5221388)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2          2 vap_black POINT (-7909947 5205189)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3          2 vap_black POINT (-7909878 5205100)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4          1 vap_black POINT (-7918542 5204014)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5          1 vap_black POINT (-7915212 5208102)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6          1 vap_black POINT (-7921548 5204292)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7          1 vap_black POINT (-7908403 5204181)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8          1 vap_black POINT (-7911931 5214180)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 9          1 vap_black POINT (-7907501 5219049)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 10         3 vap_black POINT (-7913779 5208277)</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
