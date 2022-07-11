@@ -8,7 +8,7 @@ Authors@R:
            email = "christopherkenny@fas.harvard.edu",
            comment = c(ORCID = "0000-0002-9386-6860"))
 Description: Generate point data for representing people within spatial data. This
-  collects a suite of tools for creating simple dot density maps. Several backends 
+  collects a suite of tools for creating simple dot density maps. Several functions 
   from different spatial packages are standardized to take the same arguments so
   that they can be easily substituted for each other.
 License: MIT + file LICENSE

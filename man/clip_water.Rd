@@ -23,7 +23,10 @@ tibble with \code{sf} geometries
 Remove Water
 }
 \examples{
+\donttest{
+# time to run varies greatly, depending on machine
 data(suffolk)
 data(boston_water)
 clip_water(suffolk, boston_water[10, ])
+}
 }
