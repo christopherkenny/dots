@@ -10,9 +10,13 @@
 #' @export
 #'
 #' @examples
+#' \donttest{
+#' # time to run varies greatly, depending on machine
 #' data(suffolk)
 #' data(boston_water)
 #' clip_water(suffolk, boston_water[10, ])
+#' }
+
 clip_water <- function(shp, water, filter_islands = FALSE, ...) {
   shp <- shp %>%
     sf::st_difference(y = water) %>%
