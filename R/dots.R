@@ -11,7 +11,8 @@
 #'
 #' @examples
 #' data('suffolk')
-#' dots(suffolk, c(pop_white, pop_black), divisor = 2000)
+#' # subset to first 20 rows for speed on CRAN
+#' dots(suffolk[1:20, ], c(vap_black), divisor = 2000)
 dots <- function(shp, cols, engine = engine_terra, divisor = 250,
                  min_point = 0.1 * divisor) {
   cols <- rlang::enquo(cols)
@@ -36,7 +37,8 @@ dots <- function(shp, cols, engine = engine_terra, divisor = 250,
 #'
 #' @examples
 #' data('suffolk')
-#' dots_points(suffolk, c(pop_white, pop_black))
+#' # subset to first 20 rows for speed on CRAN
+#' dots_points(suffolk[1:20, ], c(vap_black))
 dots_points <- function(shp, cols, engine = engine_terra, divisor = 250,
                         min_point = 0.1 * divisor) {
   cols <- rlang::enquo(cols)

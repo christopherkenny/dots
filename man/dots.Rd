@@ -31,5 +31,6 @@ Make dot density plots
 }
 \examples{
 data('suffolk')
-dots(suffolk, c(pop_white, pop_black), divisor = 2000)
+# subset to first 20 rows for speed on CRAN
+dots(suffolk[1:20, ], c(vap_black), divisor = 2000)
 }

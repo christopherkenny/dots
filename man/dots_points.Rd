@@ -31,5 +31,6 @@ Make dot density points
 }
 \examples{
 data('suffolk')
-dots_points(suffolk, c(pop_white, pop_black))
+# subset to first 20 rows for speed on CRAN
+dots_points(suffolk[1:20, ], c(vap_black))
 }

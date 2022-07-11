@@ -1,6 +1,6 @@
 Package: dots
 Title: Dot Density Maps
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: 
     person(given = "Christopher T.",
            family = "Kenny",
