@@ -26,21 +26,1897 @@ The main function in `dots` is `dots()`.
 ``` r
 library(dots)
 library(sf)
-#> Linking to GEOS 3.9.1, GDAL 3.4.3, PROJ 7.2.1; sf_use_s2() is TRUE
+#> Linking to GEOS 3.11.2, GDAL 3.6.2, PROJ 9.2.0; sf_use_s2() is TRUE
 library(ggplot2)
 data('suffolk')
-dots::dots(suffolk, c(pop_black, pop_white), divisor = 1000) + 
+dots::dots(suffolk, c(pop_black, pop_white), divisor = 1000, engine = engine_sf_random) + 
   scale_color_viridis_d() + 
   theme_void()
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
 ```
+
+<img src="man/figures/README-example-1.png" width="100%" />
 
 You can also use `dots_points()` to only make the randomized points.
 
 ``` r
-dots::dots_points(suffolk, c(pop_black, pop_white), divisor = 1000) |> 
+dots::dots_points(suffolk, c(pop_black, pop_white), divisor = 1000, engine = engine_sf_random) |> 
   ggplot() + 
   geom_sf(data = suffolk) + 
   geom_sf(aes(color = dots_type)) + 
   scale_color_viridis_d() + 
   theme_void()
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in min(cc[[1]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in min(cc[[2]], na.rm = TRUE): no non-missing arguments to min;
+#> returning Inf
+#> Warning in max(cc[[1]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
+#> Warning in max(cc[[2]], na.rm = TRUE): no non-missing arguments to max;
+#> returning -Inf
 ```
+
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />

@@ -38,7 +38,7 @@ library(dots)
 library(sf)
 library(ggplot2)
 data('suffolk')
-dots::dots(suffolk, c(pop_black, pop_white), divisor = 1000) + 
+dots::dots(suffolk, c(pop_black, pop_white), divisor = 1000, engine = engine_sf_random) + 
   scale_color_viridis_d() + 
   theme_void()
 ```
@@ -46,7 +46,7 @@ dots::dots(suffolk, c(pop_black, pop_white), divisor = 1000) +
 You can also use `dots_points()` to only make the randomized points.
 
 ```{r}
-dots::dots_points(suffolk, c(pop_black, pop_white), divisor = 1000) |> 
+dots::dots_points(suffolk, c(pop_black, pop_white), divisor = 1000, engine = engine_sf_random) |> 
   ggplot() + 
   geom_sf(data = suffolk) + 
   geom_sf(aes(color = dots_type)) + 
