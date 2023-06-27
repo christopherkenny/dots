@@ -16,7 +16,7 @@
 dots <- function(shp, cols, engine = engine_terra, divisor = 250,
                  min_point = 0.1 * divisor) {
   cols <- rlang::enquo(cols)
-  pts <- dots_points(shp, !!cols, engine, divisor, min_point)
+  pts <- suppressWarnings(dots_points(shp, !!cols, engine, divisor, min_point))
 
   pts %>%
     ggplot2::ggplot() +
@@ -50,7 +50,7 @@ dots_points <- function(shp, cols, engine = engine_terra, divisor = 250,
 
   purrr::map_dfr(setdiff(names(cols), attr(cols, 'sf_column')),
                  function(x) {
-                   engine(cols, x)
+                   suppressWarnings(engine(cols, x))
                  }
   )
 }
