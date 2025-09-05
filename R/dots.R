@@ -18,7 +18,7 @@ dots <- function(shp, cols, engine = engine_terra, divisor = 250,
   cols <- rlang::enquo(cols)
   pts <- suppressWarnings(dots_points(shp, !!cols, engine, divisor, min_point))
 
-  pts %>%
+  pts |>
     ggplot2::ggplot() +
     ggplot2::geom_sf(data = shp, fill = NA, color = 'black') +
     ggplot2::geom_sf(ggplot2::aes(color = .data$dots_type))
@@ -42,8 +42,8 @@ dots <- function(shp, cols, engine = engine_terra, divisor = 250,
 dots_points <- function(shp, cols, engine = engine_terra, divisor = 250,
                         min_point = 0.1 * divisor) {
   cols <- rlang::enquo(cols)
-  cols <- shp %>%
-    dplyr::select(!!cols) %>%
+  cols <- shp |>
+    dplyr::select(!!cols) |>
     dplyr::mutate(
       dplyr::across(.cols = !!cols, .fns = \(x) ifelse(x > min_point, ceiling(x / divisor), 0))
     )

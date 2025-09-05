@@ -1,3 +1,7 @@
+# dots 0.0.3
+
+* Replaces magrittr pipe with base pipe.
+
 # dots 0.0.1
 
 * Added a `NEWS.md` file to track changes to the package.

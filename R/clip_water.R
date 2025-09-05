@@ -17,12 +17,12 @@
 #' clip_water(suffolk, boston_water[10, ])
 #' }
 clip_water <- function(shp, water, filter_islands = FALSE, ...) {
-  shp <- shp %>%
-    sf::st_difference(y = water) %>%
+  shp <- shp |>
+    sf::st_difference(y = water) |>
     rmapshaper::ms_clip(clip = shp, remove_slivers = TRUE)
 
   if (filter_islands) {
-    shp <- shp %>%
+    shp <- shp |>
       rmapshaper::ms_filter_islands(...)
   }
 
