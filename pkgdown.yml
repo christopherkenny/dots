@@ -3,7 +3,7 @@ pkgdown: 2.1.3
 pkgdown_sha: ~
 articles:
   making_dot_density_maps: making_dot_density_maps.html
-last_built: 2025-09-05T17:34Z
+last_built: 2025-09-05T17:37Z
 urls:
   reference: http://christophertkenny.com/dots/reference
   article: http://christophertkenny.com/dots/articles
