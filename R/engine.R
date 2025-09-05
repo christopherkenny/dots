@@ -43,7 +43,7 @@ engine_sf_random <- function(shp, col) {
     sf::st_as_sf() |>
     dplyr::mutate(dots_type = col) |>
     sf::st_join(y = shp) |>
-    dplyr::relocate(.data$dots_type, .data$geometry, .after = dplyr::everything())
+    dplyr::relocate('dots_type', 'geometry', .after = dplyr::everything())
 }
 
 #' Generate Regular Points with `sf`
@@ -64,13 +64,14 @@ engine_sf_random <- function(shp, col) {
 #' engine_sf_regular(suffolk[16:20,], 'pop_nhpi')
 engine_sf_regular <- function(shp, col) {
   shp <- shp[shp[[col]] > 0, ]
+
   sf::st_sample(x = sf::st_geometry(shp), size = shp[[col]],
                 type = 'regular', exact = TRUE) |>
     dplyr::as_tibble() |>
     sf::st_as_sf() |>
     dplyr::mutate(dots_type = col) |>
     sf::st_join(y = shp) |>
-    dplyr::relocate(.data$dots_type, .data$geometry, .after = dplyr::everything())
+    dplyr::relocate('dots_type', 'geometry', .after = dplyr::everything())
 }
 
 #' Generate Hexagonal Points with `sf`
@@ -97,7 +98,7 @@ engine_sf_hexagonal <- function(shp, col) {
     sf::st_as_sf() |>
     dplyr::mutate(dots_type = col) |>
     sf::st_join(y = shp) |>
-    dplyr::relocate(.data$dots_type, .data$geometry, .after = dplyr::everything())
+    dplyr::relocate('dots_type', 'geometry', .after = dplyr::everything())
 }
 
 #' Generate Random Points with `sp`
@@ -125,7 +126,7 @@ engine_sp_random <- function(shp, col) {
       sf::st_as_sf() |>
       dplyr::mutate(dots_type = col) |>
       sf::st_join(y = shp) |>
-      dplyr::relocate(.data$dots_type, .data$geometry, .after = dplyr::everything()) |>
+      dplyr::relocate('dots_type', 'geometry', .after = dplyr::everything()) |>
       suppressWarnings() # proj warning
   })
 }
@@ -155,7 +156,7 @@ engine_sp_regular <- function(shp, col) {
       sf::st_as_sf() |>
       dplyr::mutate(dots_type = col) |>
       sf::st_join(y = shp) |>
-      dplyr::relocate(.data$dots_type, .data$geometry, .after = dplyr::everything()) |>
+      dplyr::relocate('dots_type', 'geometry', .after = dplyr::everything()) |>
       suppressWarnings() # proj warning
   })
 }
@@ -185,7 +186,7 @@ engine_sp_stratified <- function(shp, col) {
       sf::st_as_sf() |>
       dplyr::mutate(dots_type = col) |>
       sf::st_join(y = shp) |>
-      dplyr::relocate(.data$dots_type, .data$geometry, .after = dplyr::everything()) |>
+      dplyr::relocate('dots_type', 'geometry', .after = dplyr::everything()) |>
       suppressWarnings() # proj warning
   })
 }
@@ -215,7 +216,7 @@ engine_sp_nonaligned <- function(shp, col) {
       sf::st_as_sf() |>
       dplyr::mutate(dots_type = col) |>
       sf::st_join(y = shp) |>
-      dplyr::relocate(.data$dots_type, .data$geometry, .after = dplyr::everything()) |>
+      dplyr::relocate('dots_type', 'geometry', .after = dplyr::everything()) |>
       suppressWarnings() # proj warning
   })
 }
@@ -245,7 +246,7 @@ engine_sp_hexagonal <- function(shp, col) {
       sf::st_as_sf() |>
       dplyr::mutate(dots_type = col) |>
       sf::st_join(y = shp) |>
-      dplyr::relocate(.data$dots_type, .data$geometry, .after = dplyr::everything()) |>
+      dplyr::relocate('dots_type', 'geometry', .after = dplyr::everything()) |>
       suppressWarnings() # proj warning
   })
 }
@@ -275,7 +276,7 @@ engine_sp_clustered <- function(shp, col) {
       sf::st_as_sf() |>
       dplyr::mutate(dots_type = col) |>
       sf::st_join(y = shp) |>
-      dplyr::relocate(.data$dots_type, .data$geometry, .after = dplyr::everything()) |>
+      dplyr::relocate('dots_type', 'geometry', .after = dplyr::everything()) |>
       suppressWarnings() # proj warning
   })
 }
