@@ -1,0 +1,140 @@
+# dots
+
+`dots` provides tools to make dot density maps.
+
+## Installation
+
+You can install the stable version of `dots` from CRAN with:
+
+``` r
+
+install.packages('dots')
+```
+
+You can install the development version of `dots` from
+[GitHub](https://github.com/) with:
+
+``` r
+
+remotes::install_github('christopherkenny/dots')
+```
+
+## Example
+
+The main function in `dots` is
+[`dots()`](http://christophertkenny.com/dots/reference/dots.md).
+
+``` r
+
+library(dots)
+library(sf)
+#> Linking to GEOS 3.13.1, GDAL 3.11.0, PROJ 9.6.0; sf_use_s2() is TRUE
+library(ggplot2)
+data('suffolk')
+dots::dots(suffolk, c(pop_black, pop_white), divisor = 1000, engine = engine_sf_random) + 
+  scale_color_viridis_d() + 
+  theme_void()
+```
+
+![](reference/figures/README-example-1.png)
+
+You can also use
+[`dots_points()`](http://christophertkenny.com/dots/reference/dots_points.md)
+to only make the randomized points.
+
+``` r
+
+dots::dots_points(suffolk, c(pop_black, pop_white), divisor = 1000, engine = engine_sf_random) |> 
+  ggplot() + 
+  geom_sf(data = suffolk) + 
+  geom_sf(aes(color = dots_type)) + 
+  scale_color_viridis_d() + 
+  theme_void()
+```
+
+![](reference/figures/README-unnamed-chunk-2-1.png)
+
+# Package index
+
+## Make Dot Density Maps
+
+Major functions to create ggplots or sf points
+
+- [`dots()`](http://christophertkenny.com/dots/reference/dots.md) : Make
+  dot density plots
+- [`dots_points()`](http://christophertkenny.com/dots/reference/dots_points.md)
+  : Make dot density points
+
+## Dot Engines
+
+Backends to generate spatial points
+
+- [`engine_sf_hexagonal()`](http://christophertkenny.com/dots/reference/engine_sf_hexagonal.md)
+  :
+
+  Generate Hexagonal Points with `sf`
+
+- [`engine_sf_random()`](http://christophertkenny.com/dots/reference/engine_sf_random.md)
+  :
+
+  Generate Random Points with `sf`
+
+- [`engine_sf_regular()`](http://christophertkenny.com/dots/reference/engine_sf_regular.md)
+  :
+
+  Generate Regular Points with `sf`
+
+- [`engine_sp_clustered()`](http://christophertkenny.com/dots/reference/engine_sp_clustered.md)
+  :
+
+  Generate Clustered Points with `sp`
+
+- [`engine_sp_hexagonal()`](http://christophertkenny.com/dots/reference/engine_sp_hexagonal.md)
+  :
+
+  Generate Hexagonal Points with `sp`
+
+- [`engine_sp_nonaligned()`](http://christophertkenny.com/dots/reference/engine_sp_nonaligned.md)
+  :
+
+  Generate Nonaligned Points with `sp`
+
+- [`engine_sp_random()`](http://christophertkenny.com/dots/reference/engine_sp_random.md)
+  :
+
+  Generate Random Points with `sp`
+
+- [`engine_sp_regular()`](http://christophertkenny.com/dots/reference/engine_sp_regular.md)
+  :
+
+  Generate Regular Points with `sp`
+
+- [`engine_sp_stratified()`](http://christophertkenny.com/dots/reference/engine_sp_stratified.md)
+  :
+
+  Generate Stratified Points with `sp`
+
+- [`engine_terra()`](http://christophertkenny.com/dots/reference/engine_terra.md)
+  :
+
+  Generate Points with `terra`
+
+## Other functions and data
+
+Other useful tools and bits of example data
+
+- [`suffolk`](http://christophertkenny.com/dots/reference/suffolk.md) :
+  Suffolk County, MA Voting Districts
+- [`boston_water`](http://christophertkenny.com/dots/reference/boston_water.md)
+  : Boston Water
+- [`clip_water()`](http://christophertkenny.com/dots/reference/clip_water.md)
+  : Remove Water
+- [`filter_pts()`](http://christophertkenny.com/dots/reference/filter_pts.md)
+  : Filter Points to a Region
+
+# Articles
+
+### All vignettes
+
+- [Making Dot Density
+  Maps](http://christophertkenny.com/dots/articles/making_dot_density_maps.md):
